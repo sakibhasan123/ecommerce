@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shoping site</title>
+     
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+    :root {
+        --main-bg-color: rgb(54, 42, 165);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+
+        background-color: var(--main-bg-color);
+        font-family: 'Lato', sans-serif;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 88px;
+        padding: 0 25px;
+    }
+
+    nav ul {
+        height: 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 0 23px;
+        list-style: none;
+
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        /* color: blue; */
+        font-weight: bolder;
+    }
+
+    .search {
+
+        display: flex;
+        align-items: center;
+    }
+
+    .search button {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        color: white;
+        background: var(--main-bg-color);
+        border: 2px solid white;
+        border-radius: 7px;
+        cursor: pointer;
+
+    }
+
+    .my-1 {
+        margin: 5px 0;
+    }
+
+    .search input {
+        width: 30vw;
+        height: 27px;
+        border-radius: 5px;
+        margin: 0 16px;
+        padding: 0 12px;
+    }
+
+    .slider {
+        width: 80vw;
+        margin: 12px auto;
+        /* overflow: hidden; */
+        overflow-x: auto;
+    }
+ .card {
+        max-width: 91vw;
+        margin: 37px auto;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .cards{
+        display: flex;
+        direction: row;
+        justify-content: center;
+    }
+
+    .card-item {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 15px;
+    }
+    @media screen and (max-width: 800px) {
+       body{
+        /* background-color: brown; */
+     }
+     nav{
+        flex-direction: column;
+     }
+     .logo{
+        justify-content: center;
+margin: 12px 0;
+     }
+     nav ul{
+        justify-content: center;
+     }
+     .search{
+        justify-content: center;
+     }
+     .search input{
+        margin: 12px 16px;
+     }
+     nav ul{
+        height: 34px;
+     }
+     .slider{
+        height: 25vh;
+     }
+    }
+    .container {
+        min-height: calc(100vh - 60px - 12vh);
+    }
+
+    footer {
+        height: 12vh;
+        background-color: var(--main-bg-color);
+        color: white;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .flex-all-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="flipkart.png" alt="">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="Search Here"><button class="btn">Search </button>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <img src="https://source.unsplash.com/1600x500/?shoping, ecommerce" alt="">
+            </div>
+
+            <div class="card">
+                <h2 class="my-2">joint the cricket fun</h2>
+                <div class="cards">
+                    <div class="card item">
+                        <img src="https://source.unsplash.com/160x160/?cricket,stumps" alt="">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="https://source.unsplash.com/160x160/?cricket,Bats" alt="">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="https://source.unsplash.com/160x160/?cricket,ball" alt="">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="https://source.unsplash.com/160x160/?cricket,pad" alt="">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="https://source.unsplash.com/160x160/?cricket,helmat" alt="">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="https://source.unsplash.com/160x160/?cricket,Gloves" alt="">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="https://source.unsplash.com/160x160/?cricket" alt="">
+
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">min 20% off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="flex-all-center">
+        <p> Copyright &copy; MyCart.com</p>
+    </footer>
+</body>
+
+</html>
